@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="https://kit.fontawesome.com/519bdf3c37.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<section class="header-description" scrollIndex ="0">        <!-- for the header and the decription bellow it + the iphone image -->
+    <div class="header-nav">        <!-- for the header -->
+       <a id="applightButton" onclick="refreshPage()"><img src="images/logo.png" alt="logo img" class="applight">
+                                                        <img src="images/logo-black.png" alt="logo" id="applight1"
+                                                        style="display: none;"></a><!-- to refresh the page when clicking on the logo --> 
+        
+            <button id="responsive-button">click</button>
+                                                
+     <div class="navbar">
+            <ul id="navbar-ul">
+             <a href="#" class="js-a"><li>Home</li></a>
+             <a href="#" class="js-a"><li>About</li></a>
+             <a href="#" class="js-a"><li>Features</li></a>
+             <a href="#" class="js-a"><li>Team</li></a>
+             <a href="#" class="js-a"><li>Testimonials</li></a>
+             <a href="#" class="js-a"><li>FAQ</li></a>
+             <a href="#" class="js-a"><li>Contact</li></a>
+            </ul>
+        </div>
+    </div>
+<br><br><br>
+<div class="description-container">
+        <div class="description">
+            <h1>Best app website Template</h1><br><br>
+            <p id="lorem-header">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum cumque sequi,
+                 fuga debitis obcaecati esse 
+                est pariatur sint quaerat facere unde, modi suscipit neque accusamus,
+                 similique officia molestiae odit? Aut?</p>
+        
+                 
+                 <!-- download app buttons -->
+                 <div class="download-buttons">
+                   <button><a href="https://www.apple.com/app-store/"> 
+                       <i class="fa-brands fa-apple"></i>
+                       <p>download on the app store</p></a>
+                    </button>
+                    
+   
+                    <button><a href="https://play.google.com">    
+                    <i class="fa-brands fa-google-play"></i>
+                    <p>Get it on google play</p>
+                        </a>
+                    </button>
+           </div>
+        
+                </div>
+                         <!-- iphone image -->
+                         <img src="images/iphone-screen.png" alt="iphone" id="iphone">
+        <div id="waves"> 
+            <img src="images/applight-wave.svg" alt="a">
+        </div>
+    </div>
+</section>
+<!-- END OF HEADER AND DESCRIPTION -->
+<br><br><br><br><br><br>
+
+
+<section class="about-video" scrollIndex="1">
+
+    <h1 style="text-align: center;">About</h1><br>
+    <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+    <p class="abt">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+         amet viverra. Fusce sit amet lorem faucibus,
+         vestibulum ante in, pharetra ante.</p>
+
+         <div class="about-services-container">
+
+
+            <div class="services">
+                <i class="fa fa-life-ring" aria-hidden="true"></i>
+                <h2>support</h2><br> 
+                <p>Phasellus lobortis justo a magna facilisis, in commodo
+                 tellus rutrum. Sed vitae condimentum nulla.</p>
+            </div>
+
+
+            <div class="services">
+                <i class="fa fa-mobile" aria-hidden="true"></i>
+                <h2>Cross Platform</h2><br>
+                <p>Phasellus lobortis justo a magna facilisis, in commodo
+                 tellus rutrum. Sed vitae condimentum nulla.</p>
+            </div>
+
+
+            <div class="services">
+                <i class="fa fa-bolt" aria-hidden="true"></i>
+                <h2>Fast</h2><br>
+                <p>Phasellus lobortis justo a magna facilisis, in commodo
+                 tellus rutrum. Sed vitae condimentum nulla.</p>
+            </div>
+         </div><br>
+<!-- learn more button -->
+         <button id="learn-more" onclick="refreshPage()">Learn More</button>
+
+    <section class="video-overlay">
+             <div class="video">
+                <div class="video-center">
+                    <p>WATCH NOW</p>
+                    <button onclick="loadVideo()"><i class="fa-solid fa-play"></i></button>
+                </div>
+            
+            </div>
+                <div class="youtube-window">
+                    <iframe  id="video-loader" src="https://www.youtube.com/embed/Ku52zNnft8k?rel=0&amp;showinfo=0" allowfullscreen></iframe>
+                </div>
+        </section>
+</section>
+
+
+<!-- Features section (2nd section) -->
+<section scrollIndex="2">
+    <div style="margin-top: 5vw;">
+<h1 style="text-align: center;">Features</h1><br>
+<p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+<p class="abt">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+     amet viverra. Fusce sit amet lorem faucibus,
+     vestibulum ante in, pharetra ante.</p>
+    </div>
+
+<!-- features -->
+    <div class="Features-container">
+        <!-- left features -->
+            <div class="Features-left">
+                <div class="features">
+                    <!-- left feature1 -->
+                    <!-- every feature has an icon and a description -->
+                    <div class="features-description">
+                            <h4 id="h4-khra">Fast Processing</h4><br>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                                tempor incididugnt ut labore</p>
+                    </div>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-bolt"></i>
+                    </div>
+                </div>
+
+                <!-- left feature2 -->
+                <div class="features">
+                    <div class="features-description">
+                        <h4 id="h4-khra">Low Power Consuming</h4><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididugnt ut labore</p>
+                    </div>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-battery-full"></i>
+                    </div>
+                </div>
+
+                <!-- left feature3 -->
+                <div class="features">
+                    <div class="features-description">
+                        <h4 id="h4-khra">WI-FI Compatibility</h4><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididugnt ut labore</p>
+                    </div>
+                    <div class="features-icon">
+                        <i class="fa-solid fa-wifi"></i>
+                    </div>
+                </div>
+            </div>
+            
+                        <!--the iphone image  -->
+            <div class="Features-image">
+                <img src="images/iphone-screen.png" alt="iphone">
+            </div>
+
+                <!-- right features -->
+            <div class="Features-right">
+                <div class="features">
+                    <!-- right feature1 -->
+                    <div class="features-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+
+                    <div class="features-description">
+                        <h3 style="margin-right: 3vw;">Regular Update</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididugnt ut labore</p>
+                    </div>
+                </div>
+
+                <!-- right feature2 -->
+                <div class="features">
+                    <div class="features-icon">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+
+                    <div class="features-description">
+                        <h3>Save Money</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididugnt ut labore</p>
+                    </div>
+                </div>
+
+                <!-- right feature3 -->
+                <div class="features">
+                    <div class="features-icon">
+                        <i class="fa-solid fa-hard-drive"></i>
+                    </div>
+
+                    <div class="features-description">
+                        <h3>Unlimited Storage</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
+                            tempor incididugnt ut labore</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+    <!-- end section -->
+
+<br><hr>
+    <!-- 3rd section team section -->
+    <section class="team-section" scrollIndex="3">
+
+        <div>
+            <h1 style="text-align: center; font-size: 2.5vw;">Our Team</h1><br>
+            <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+            <p class="abt">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+                 amet viverra. Fusce sit amet lorem faucibus,
+                 vestibulum ante in, pharetra ante.</p>
+                </div>
+
+                <div class="team-members-container">
+                    <!-- team member1 -->
+                        <div class="team-member">
+
+                                    <div class="members-image">
+                                            <img src="images/user1.jpg" alt="user1">
+                                    </div>
+
+                                    <div class="member-description">
+                                            <h4>Nitu Singh</h4>
+                                            <h4>Marketing specialist</h4>
+                                    </div>
+                        </div>
+
+                        <!-- team member2-->
+                        <div class="team-member">
+                                <div class="members-image">
+                                        <img src="images/user2.jpg" alt="user2">
+                                </div>
+
+                                <div class="member-description">
+                                        <h4>Yogesh Singh</h4>
+                                        <h4>CEO & Founder</h4>
+                                </div>
+                        </div>
+
+                        <!-- team member3 -->
+                        <div class="team-member">
+                                <div class="members-image">
+                                        <img src="images/user3.jpg" alt="user3">
+                                </div>
+
+                                <div class="member-description">
+                                        <h4>Nisha Sharma</h4>
+                                        <h4>Web Developper</h4>
+                                </div>
+                        </div>
+                </div>
+                <br><br>
+    </section>
+<!-- team section end -->
+
+
+<!-- Testimonials section -->
+<section class="testimonials-section" scrollIndex="4">
+
+    <br><br><br><br><br>
+    <div class="testimonials-container">
+        <div>
+            <h1 style="text-align: center; font-size: 2.5vw;color: white;">Testimonials</h1><br>
+            <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+            <p class="abt" style="color: white;">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+                 amet viverra. Fusce sit amet lorem faucibus,
+                 vestibulum ante in, pharetra ante.</p>
+                </div>
+
+
+            <div class="testimonials">
+                    <button id="test-arrow-left" class="testimonial-arrows" onclick="slideShow()">←</button>
+
+                        <!-- first testimony -->
+                    <div id="testimonial1" class="testimonial-not-hidden">
+                            <img src="images/user1.jpg" alt="user1">
+
+                            <div class="testimony-description">
+                                <h2>John michael</h2>
+                                <h4>Degital Designer</h4>
+                                <br>
+                             <p>
+                                Consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                tincidunt ut laoreet dolore magna aliquam eratvo lutpat.
+                             </p>
+                            </div>
+                    </div>
+
+                        <!-- second testimony -->
+                    <div id="testimonial2" class="testimonial-hidden">
+                        <img src="images/user2.jpg" alt="user2">
+
+                        <div class="testimony-description">
+                            <h2>Steve Smith</h2>
+                            <h4>App user</h4>
+                            <br>
+                            <p>
+                                Consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                                tincidunt ut laoreet dolore magna aliquam eratvo lutpat.
+                             </p>
+                        </div>
+                </div>
+
+                <!-- third testimony -->
+                <div id="testimonial3" class="testimonial-hidden">
+                    <img src="images/user3.jpg" alt="user3">
+
+                    <div class="testimony-description">
+                        <h2>Gordon Shaw</h2>
+                        <h4>Blogger</h4>
+                        <br>
+                        <p>
+                            Consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            tincidunt ut laoreet dolore magna aliquam eratvo lutpat.
+                         </p>
+                    </div>
+            </div>
+
+                    <button id="test-arrow-right" class="testimonial-arrows">→</button>
+
+            </div>
+    </div>
+
+</section>
+<!-- testimonials section end -->
+
+
+<!-- FAQ section -->
+
+<section class="section-FAQ" scrollIndex="5">
+     <br><br><br>
+
+ <div>
+    <h1 style="text-align: center; font-size: 2.5vw;">Frequently asked questions</h1><br>
+    <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+    <p class="abt">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+         amet viverra. Fusce sit amet lorem faucibus,
+         vestibulum ante in, pharetra ante.</p>
+
+         <div class="FAQ-container">
+            <!-- left question1 -->
+            <div class="FAQ-left">
+                <div class="FAQ-questions">
+                    <h3>Nam tellus felis, dignissim quis dui ?</h3><br>
+                    <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit est, ultricies
+                         et tellus ac, euismod placerat orci. Donec commodo.</p>
+            </div>
+
+            <!-- left question2 -->
+            <div class="FAQ-questions">
+                <h3>Nullam elit est, ultricies et tellus ac ?</h3><br>
+                <p>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh. Vivamus euismod nunc eu leo faucibus
+                , vel elementum justo posuere. In sed varius nisi. Curabitur id porta ipsum, et vestibulum dui.</p>
+
+        </div>
+
+        <!-- left question3 -->
+        <div class="FAQ-questions">
+            <h3>Ut vestibulum euismod aliquet. Quisque nec malesuada nibh ?</h3><br>
+            <p>Suspendisse fermentum placerat enim, at pellentesque augue. Nullam elit 
+                est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
+    </div>
+                </div>
+
+                <div class="FAQ-right">
+
+                    <!-- right question1 -->
+                    <div class="FAQ-questions">
+                        <h3>Suspendisse fermentum placerat enim, at pellentesque augue elit est ?</h3><br>
+                        <p>Vivamus euismod nunc eu leo faucibus, vel elementum justo posuere. In sed varius nisi.</p>
+                </div>
+
+                <!-- right question2 -->
+                <div class="FAQ-questions">
+                    <h3>Mauris scelerisque, dui non faucibus vulputate ?</h3><br>
+                    <p>Sed tempus in neque ac rhoncus. Phasellus vehicula, erat tempor malesuada egestas,
+                         mauris tellus malesuada erat, at vestibulum nulla ex et lectus. 
+                        Nullam elit est, ultricies et tellus ac, euismod placerat orci.</p>
+            </div>
+
+            <!-- right question3 -->
+            <div class="FAQ-questions">
+                <h3>Donec commodo dapibus congue ?</h3><br>
+                <p>Nullam elit est, ultricies et tellus ac, euismod placerat orci fermentum placerat enim
+                     at pellentesque augue. Nullam elit 
+                    est, ultricies et tellus ac, euismod placerat orci. Donec commodo dapibus congue.</p>
+        </div>
+                </div>
+         </div>
+         <hr>
+</section>
+
+<!-- END of FAQ section -->
+
+
+<!-- contacts section -->
+<section class="contact-section" scrollIndex="6">
+
+    <div>
+        <h1 style="text-align: center; font-size: 2.5vw;">Contact Us</h1><br>
+        <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+        <p class="abt">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+             amet viverra. Fusce sit amet lorem faucibus,
+             vestibulum ante in, pharetra ante.</p>
+
+            <div class="contact-container">
+                    <div class="form">
+                            <form >
+                                    <input type="text" placeholder="Full Name" id="contact-form-name" maxlength="50" minlength="5">
+                                    <input type="email" placeholder="Email" id="contact-form-email">
+                                    <input type="text" placeholder="Subject" id="contact-form-subject">
+                                    <input type="textarea" placeholder="Message" id="contact-form-message" maxlength="300">
+                                    <button class="contact-submit">submit</button>
+                            </form>
+                    </div>
+
+
+                    <!-- right side of the form -->
+                    <div class="contact-information">
+                            <div class="contact-icon-info">
+                                    <div class="contact-icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+
+                                        <!-- information about the company -->
+                                    <div class="contact-info">
+                                            <h4>ADRESS</h4>
+                                            <h4>NEW DELHI,INDIA</h4>
+                                    </div>
+                            </div>
+
+
+
+                            <div class="contact-icon-info">
+                                <div class="contact-icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+
+                                    <!-- information about the company -->
+                                <div class="contact-info">
+                                        <h4>PHONE</h4>
+                                        <h4>009900990099</h4>
+                                </div>
+                        </div>
+
+
+
+
+                        <div class="contact-icon-info">
+                            <div class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+
+                                <!-- information about the company -->
+                            <div class="contact-info">
+                                    <h4>EMAIL</h4>
+                                    <h4>YOGESHSINGH.NOW@GMAIL.COM</h4>
+                            </div>
+                    </div>
+
+
+
+
+                    <div class="contact-icon-info">
+                        <div class="contact-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                            <!-- information about the company -->
+                        <div class="contact-info">
+                                <h4>WORKING HOURS</h4>
+                                <h4>MON-FRI 9.00 AM TO 5.00PM.</h4>
+                        </div>
+                </div>
+                    </div>
+            </div>
+
+
+
+            <!-- download our app sub-section -->
+
+            <div class="download-container">
+                <div class="last">
+                    <h1 style="text-align: center; font-size: 2.5vw;color: white;">Download Our App</h1><br>
+                    <p style="background-color: var(--darkPurple);height:1px;width: 15%;margin-left: 43%;"></p><br><br>
+                    <p class="abt" style="color: white;">Sed quis nisi nisi. Proin consectetur porttitor dui sit
+                         amet viverra. Fusce sit amet lorem faucibus,
+                         vestibulum ante in, pharetra ante.</p>
+            </div>
+            <br><br><br><br>
+
+            <div class="download-btns">
+                    <button>
+                        <a href="https://www.apple.com/app-store/"> 
+                            <i class="fa-brands fa-apple"></i></a>
+                            <div>
+                                <p>Download On</p>
+                                <h3>app store</h3>
+                            </div>
+                        
+                    </button>
+
+
+                    <button>
+                        <a href="https://play.google.com"> 
+                            <i class="fa-brands fa-google-play"></i></a>
+                            <div>
+                                <p>Get it On</p>
+                                <h3>google play</h3>
+                            </div>
+                        
+                    </button>
+            </div>
+
+</section>
+
+    <div class="rights">
+        <p>2018 © Applight. Website Designed by</p>
+        <a href="por.html">djawad</a>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,528 @@
+
+/*css file to add responsivity to the website*/
+
+/*small screens max width 700px*/
+@media all and (max-width:700px){
+
+    .header-nav ul{
+        display: none;
+    }
+
+    .description-container{
+        margin-top: 100px;
+        display: block;
+    }
+
+    .description h1{
+        margin-left: 20px;
+        text-align: center;
+    }
+
+        #lorem-header{
+            line-height: 150%;
+            margin-left: 10%;
+            width: 80%;
+            text-align: center;
+        }
+
+
+        .download-buttons{
+            margin-left:20%;
+            margin-bottom: 70px;
+        }
+
+        .download-buttons button{
+            font-size: 2vw;
+            margin-bottom: 10px;
+        }
+
+        .download-buttons i{
+            font-size: 2em;
+        }
+
+        #iphone{
+            margin-left: 10%;
+        }
+
+        /*end section*/
+
+
+        /*begin about section*/
+        .abt{
+            font-size: 4vw;
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .about-services-container{
+            flex-direction: column;
+        }
+
+        .about-services-container i{
+            margin: 0px 30%;
+            margin-bottom: 10px;
+        }
+
+        .services{
+            margin-bottom: 50px;
+        }
+
+        #learn-more{
+            font-size: 4vw;
+            margin-left: 30%;
+            margin-top: 0px;
+        }
+
+        .video-center{
+            margin-top: 20%;
+        }
+
+        .video-center p{
+            font-size: 3vw;
+        }
+
+        /*end about section*/
+
+
+
+        /*begin features section*/
+        .Features-container{
+            flex-direction: column;
+        }
+
+        .Features-left, .Features-right{
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .Features-left p{
+            text-align: center;
+            width: 80vw;
+        }
+
+        .Features-right,.Features-left{
+            margin: 0px;
+        }
+
+        .Features-image{
+            margin: 0 auto;
+        }
+
+        .features-description h3 ,.features-description h4{
+            text-align: center;
+        }
+
+        .features-description p{
+            text-align: center;
+        }
+
+        .Features-left i{
+            position: relative;
+            right: 20vw;
+        }
+
+        .Features-right i{
+            position: relative;
+            left: 70vw;
+            top: 1vw;
+        }
+
+        /*end of features section*/
+
+
+        /*begin of team section*/
+        .team-members-container{
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .members-image img{
+            height: 40vw;
+            width: 40vw;
+        }
+
+        /*end of team section*/
+
+        /*begin of testimonials section*/
+
+        .testimonials{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-not-hidden,.testimonial-hidden{
+            flex-direction: column;
+            font-size: 4vw;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20%;
+        }
+
+        .testimonial-not-hidden h2,
+        .testimonial-not-hidden h4,
+        .testimonial-not-hidden p,
+        .testimonial-hidden h2,
+        .testimonial-hidden h4,
+        .testimonial-hidden p{
+                text-align: center;
+        }
+
+        .testimonial-arrows button{
+            margin: 0px;
+        }
+        .testimonials button:first-child{
+            margin: 0px;
+        }
+
+        .testimonials img{
+            height: 40vw;
+            width: 40vw;
+            position: relative;
+            left: 30%;            
+        }        
+        
+        /*end of testimonials section*/
+
+        /*begin of FAQ section*/
+        .FAQ-container{
+            flex-direction: column;
+        }
+
+        .FAQ-questions p,.FAQ-questions h3{
+            text-align: center;
+        }
+
+        .FAQ-left,.FAQ-right{
+            width: 100%;
+            margin: 0px;
+        }
+        
+        /*end of FAQ section*/
+
+        /*begin of contact section*/
+        .contact-container{
+            flex-direction:column;
+            width: 100%;
+            margin-left: 5%;
+        }
+
+        .contact-information{
+            margin-bottom: 0px;
+            height: 75vw;
+            width: 90%;
+            margin-top: 50px;
+        }
+
+        form input{
+            font-size: 4vw;
+        }
+
+        form button{
+            font-size: 3vw;
+        }
+
+        #contact-form-name{
+            margin-right: 2%;
+            width: 48%;
+        }
+
+        #contact-form-name,#contact-form-email{
+            width: 48%;
+        }
+
+        #contact-form-message{
+            height: 35vw;
+        }
+
+        .download-btns button{
+            height: 50px;
+            width: 150px;
+            font-size: 2vw;
+        }
+
+        .download-btns{
+            margin-left: 15%;
+        }
+
+        .download-btns i{
+            font-size: 2em;
+        }
+        /*end of contact section*/
+
+}
+
+/*medium screens min width 700px*/
+@media (min-width:701px) and (max-width:950px){
+
+    .header-nav a{
+        font-size: 1.5vw;
+    }
+
+    .header-nav img{
+        margin-left: 15%;
+    }
+
+    .header-nav ul{
+        margin-right: 2vw;
+    }
+
+    .description h1{
+        margin-left: 75px;
+    }
+
+    .description-container{
+        margin-top: 100px;
+    }
+        #lorem-header{
+            line-height: 150%;
+            margin-left: 5%;
+            width: 400px;
+            text-align: center;
+        }
+
+
+        .download-buttons{
+            margin-left:20%;
+            margin-bottom: 70px;
+        }
+
+        .download-buttons button{
+            font-size: 2vw;
+            margin-bottom: 10px;
+        }
+
+        .download-buttons i{
+            font-size: 2em;
+        }
+
+        .description-container img{
+            height: 410px;
+            width: auto;
+        }
+
+        #waves img{
+            height: 150px;
+            transform: translate(-85vw,50vw);
+        }
+        
+        .download-buttons button{
+            font-size: 1.5vw;
+        }
+        /*end section*/
+
+
+        /*begin about section*/
+        .abt{
+            font-size: 3vw;
+            width: 70%;
+            margin-left: 15%;
+        }
+
+        .about-services-container{
+            flex-direction: column;
+        }
+
+        .about-services-container i{
+            margin-top:0px;
+            margin-right: 25%;
+            margin-left: 38%;
+            margin-bottom: 10px;
+        }
+
+        .services{
+            margin-bottom: 50px;
+        }
+
+        #learn-more{
+            font-size: 4vw;
+            margin-left: 30%;
+            margin-top: 0px;
+        }
+
+        .video-center{
+            margin-top: 10%;
+        }
+
+        .video-center p{
+            font-size: 3vw;
+        }
+
+        /*end about section*/
+
+
+
+        /*begin features section*/
+        .Features-container{
+            flex-direction: column;
+        }
+
+        .Features-left, .Features-right{
+            width: 100%;
+            margin-left: 0px;
+        }
+
+        .Features-left p{
+            text-align: center;
+            width: 80vw;
+        }
+
+        .Features-right,.Features-left{
+            margin: 0px;
+        }
+
+        .Features-image{
+            margin: 0 auto;
+        }
+
+        .features-description h3 ,.features-description h4{
+            text-align: center;
+        }
+
+        .features-description p{
+            text-align: center;
+        }
+
+        .Features-left i{
+            position: relative;
+            right: 25vw;
+        }
+
+        .Features-right i{
+            position: relative;
+            left: 63vw;
+            top: 1vw;
+        }
+
+        /*end of features section*/
+
+
+        /*begin of team section*/
+        .team-members-container{
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .members-image img{
+            height: 30vw;
+            width: 30vw;
+        }
+
+        /*end of team section*/
+
+        /*begin of testimonials section*/
+
+        .testimonials{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .testimonial-not-hidden,.testimonial-hidden{
+            flex-direction: column;
+            font-size: 2vw;
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            margin-left: 20%;
+        }
+
+        .testimonial-not-hidden h2,
+        .testimonial-not-hidden h4,
+        .testimonial-not-hidden p,
+        .testimonial-hidden h2,
+        .testimonial-hidden h4,
+        .testimonial-hidden p{
+                text-align: center;
+        }
+
+        .testimonial-arrows button{
+            margin: 0px;
+            font-size: 5vw;
+        }
+        .testimonials button:first-child{
+            margin: 0px;
+        }
+
+        .testimonials img{
+            height: 30vw;
+            width: 30vw;
+            position: relative;
+            left: 30%;            
+        }        
+        
+        /*end of testimonials section*/
+
+        /*begin of FAQ section*/
+        .FAQ-container{
+            flex-direction: column;
+        }
+
+        .FAQ-questions p,.FAQ-questions h3{
+            text-align: center;
+        }
+
+        .FAQ-left,.FAQ-right{
+            width: 100%;
+            margin: 0px;
+        }
+        
+        /*end of FAQ section*/
+
+        /*begin of contact section*/
+        .contact-container{
+            width: 100%;
+            margin-left: 5%;
+        }
+
+        .contact-information{
+            height: 50vw;
+            justify-content: center;
+            width:100%;
+            font-size:1.5vw ;
+            margin-right: 10%;
+          }
+          .contact-icon-info{
+                margin-top: 30px;
+                margin-bottom: 30px;
+          }
+
+        form input{
+            font-size: 3vw;
+        }
+
+        form button{
+            font-size: 3vw;
+        }
+
+        #contact-form-name{
+            margin-right: 2%;
+            width: 48%;
+        }
+
+        #contact-form-name,#contact-form-email{
+            width: 48%;
+        }
+
+        #contact-form-message{
+            height: 35vw;
+        }
+
+        .download-btns button{
+            height: 50px;
+            width: 150px;
+            font-size: 1.5vw;
+        }
+
+        .download-btns{
+            margin-left: 30%;
+        }
+
+        .download-btns i{
+            font-size: 2em;
+        }
+        /*end of contact section*/
+}

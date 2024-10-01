@@ -1,0 +1,608 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family:  'Poppins', sans-serif;
+}
+
+:root{
+    /* main colors */
+    --lightPurple: #a449ff;
+    --darkPurple : #7a60ff;
+    --veryDarkPurple : #5f0099;
+}
+
+/*header container (all)*/
+.header-description{
+    width: 100%;
+    background: linear-gradient(to left , var(--darkPurple) , var(--lightPurple));
+}
+
+
+
+/*header navbar*/
+.header-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    background: transparent;
+    z-index: 1000;
+}
+
+#responsive-button{
+    display:none ;
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(255, 255, 255, 0.775);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.header-nav ul{
+    display: flex;
+    margin-right:10vw;
+    margin-top: 2vw;
+}
+.header-nav li{
+    list-style-type: none;
+    margin-top: 0.8vw;
+    margin-right: 2vw;
+}
+.header-nav a{
+    font-size:1.1vw;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.header-nav img{
+    margin-top: 2vw;
+    margin-left: 50%;
+}
+
+/*hover effect header navbar*/
+.navbar a:hover{
+    color: var(--veryDarkPurple);
+}
+
+/*class for the js changes*/
+
+.navbarjs{
+    color: black;
+}
+
+
+/*description+ iphone picture*/
+.description-container{
+    margin-top: 5vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description h1 , .description p{
+    color: white;
+    margin-left: 150px;
+}
+
+#lorem-header{
+    width: 480px;
+    line-height: 2vw;
+    font-family: poppins , sans-serif;
+}
+
+#iphone img{
+    height: 410px;
+    width: 210px;
+}
+#iphone{
+      transform: translate(10vw,-2vw);
+      animation-name: iphone1;
+      animation-duration: 1s;
+}
+
+/*adjusting download buttons*/
+.download-buttons{
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 50px;
+    animation-name: downloadButtons1;
+    animation-duration: 1s;
+}
+
+.download-buttons button{
+    height: 50px;
+    width: 150px;
+    font-size: 1vw;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+}
+.download-buttons a{
+    display: flex;
+    text-decoration: none;
+}
+.download-buttons p{
+    margin-left: 5px;
+}
+.download-buttons i{
+    font-size: 2vw;
+    color: white;
+}
+
+/*move the waves image to he right place(bottom left)*/
+#waves img{
+    transform: translate(-77vw,26vw);
+}
+
+
+/*about and services section*/
+
+.abt{
+    font-size: 1.6vw;
+    color:rgba(124, 124, 124, 0.9);
+    width: 60%;
+    text-align: center;
+    margin-left: 25%;
+}
+
+.about-services-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 80px;
+}
+.about-services-container i{
+    font-size: 4em;
+    border: 1px solid;
+    color: white;
+    background: linear-gradient(to left , var(--darkPurple),var(--lightPurple));
+    padding: 40px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+   margin-left: 30%;
+}
+
+.about-services-container p{
+ text-align: center;
+}
+
+.services p,.services h2{
+    text-align: center;
+width: 70%;
+margin-left:10% ;
+}
+
+.services p{
+    color:rgba(124, 124, 124, 0.9);
+}
+.services{
+    animation-name: icon01;
+    animation-duration: 1s;
+}
+
+.services:nth-child(2){
+    animation-name: icon02;
+    animation-duration: 1s;
+}
+
+.services:nth-child(3){
+    animation-name: icon03;
+    animation-duration: 1s;
+}
+
+/*learn more button*/
+#learn-more{
+    color: var(--lightPurple);
+    background-color: white;
+    padding:15px 30px;
+    border: 2px solid var(--lightPurple);
+    border-radius: 10px;
+    font-size: 1.5vw;
+    margin-top: 50px;
+    margin-left: 42%
+}
+#learn-more:hover{
+    color: white;
+    background-color: var(--lightPurple);
+}
+
+
+/*about video*/
+.video-overlay{
+    width: 100%;
+    background: url(images/video-bg.jpg);
+    margin-top: 50px;
+    height: 300px;
+}
+.video{
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+    background-color: var(--darkPurple);
+    background:linear-gradient(to left, rgba(122, 96, 255, 0.90), rgba(205, 159, 250, 0.90));
+    height: 300px;
+}
+.youtube-window iframe{
+position: relative;
+bottom: 25vw;
+left: 25vw;
+height: 30vw;
+width: 50vw;
+display: none;
+}
+
+.video-center p{
+    font-size: 2vw;
+    color: white;
+}
+.video-center{
+    text-align: center;
+    margin-top: 7%;
+}
+
+.video-center i{
+    font-size: 3vw;
+    padding: 20px;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--darkPurple);
+}
+.video-center button{
+    border: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+.video-js{
+    animation-name: videoJS;
+    animation-duration:300ms;
+}
+
+
+/* section 2   features*/
+/*features*/
+.Features-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.Features-left, .Features-right{
+    width: 30%;
+}
+
+.Features-left{
+    margin-left: 7vw;
+}
+
+.Features-right{
+    margin-right: 7vw;
+}
+
+.Features-left .features-description{
+    margin-top: 2%;
+    margin-left: 3vw;
+}
+
+.Features-right .features-description{
+    margin-top: 2%;
+    margin-left: 1vw;
+}
+
+.features{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.Features-image{
+    animation-name: iphone2;
+    animation-duration: 1s;
+}
+
+.features i{
+    font-size:2vw;
+    border: 1px solid;
+    border-radius: 50%;
+    color: var(--lightPurple);
+    padding: 10px;
+    width: fit-content;
+    animation-name: icon2;
+    animation-duration: 1s;
+}
+
+/*about section end*/
+
+
+/*team section*/
+.team-section{
+    background-color: #eeeeee98 ;
+}
+
+.team-members-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.members-image{
+    margin-top: 70px;
+}
+
+.members-image img{
+    height:auto ;
+    width: 18vw;
+    border-radius: 50%;
+}
+
+.member-description{
+    text-align: center;
+    width: inherit;
+    margin-top: 20px;
+}
+
+.member-description h4:nth-child(2){
+    font-weight: lighter;
+    color: rgba(121, 119, 119, 0.829);
+}
+
+.member-description h4:first-child{
+    color: var(--lightPurple);
+}
+
+.member-description h4{
+    line-height: 150%;
+}
+
+.team-member{
+    animation-name: teamMember01;
+    animation-duration: 1s;
+
+}
+/*team section end*/
+
+
+/*3rd section    testimonials*/
+
+.testimonials-section{
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+}
+
+.testimonials{
+    display: flex;
+    margin-top: 70px;
+    justify-content: space-between;
+}
+
+.testimonials img{
+    height: 10vw;
+    width: 10vw;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.testimonials button{
+    height: 40px;
+    font-size: 2vw;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    background-color:inherit;
+    margin-top: 5%;
+    cursor: pointer;
+}
+
+.testimony-description{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.testimony-description h4{
+    font-weight: lighter;
+}
+
+.testimonials button:first-child{
+    margin-left: 13%;
+}
+
+.testimonials:nth-child(2){
+    margin-right: 13%;
+}
+
+.testimonial-not-hidden{
+    display: flex;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 110px;
+}
+
+.testimonial-hidden{
+    display: none;
+    width: 60%;
+    background-color: rgba(255, 255, 255, 0.719);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/*testimonial section end*/
+
+
+/*4th section    FAQ section*/
+.section-FAQ{
+    background-color: rgba(218, 216, 216, 0.288);
+
+}
+
+.FAQ-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+.FAQ-left{
+    width: 40%;
+    margin-left: 7%;
+}
+
+.FAQ-right{
+    width: 40%;
+    margin-right: 7%;
+}
+
+.FAQ-questions{
+    margin-bottom: 50px;
+    animation-name: faq;
+    animation-duration: 1s;
+}
+
+.FAQ-questions p{
+    color: grey;
+}
+
+.FAQ-questions h3{
+    font-weight: lighter;
+}
+
+/*FAQ section END*/
+
+
+/*contact us section*/
+
+/*form (left side)*/
+.contact-section{
+    margin-top:80px;
+    width: 100%;
+}
+
+.contact-container{
+    display: flex;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form{
+    margin-right: 10%;
+}
+
+form input{
+    border-radius: 20px;
+    border:1px solid rgba(128, 128, 128, 0.464);
+    box-shadow: 1px 1px 1px grey;
+    font-size: 1.2vw;
+    margin-bottom: 20px;
+    padding: 1.5%;
+}
+
+form button{
+    width: 100%;
+    font-size: 1.5vw;
+    padding: 2%;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#contact-form-name{
+    margin-right: 10%;
+}
+
+#contact-form-name,#contact-form-email{
+    width: 44%;
+}
+
+#contact-form-subject,#contact-form-message{
+    width: 100%;
+}
+
+#contact-form-message{
+    height: 15vw;
+}
+
+
+/*info (right side)*/
+.contact-information{
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 27vw;
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+    border: none;
+    border-radius: 20px;
+}
+
+.contact-information div:nth-child(){
+    margin-bottom: 0px;
+}
+
+.contact-icon-info{
+    margin-top: 8%;
+    margin-bottom: 5%;
+    display: flex;
+    margin-left: 10%;
+}
+
+.contact-icon{
+    margin-right: 2vw;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.contact-info{
+    color: white;
+}
+
+/*download our app sub-section*/
+
+.download-container{
+    background: linear-gradient(to left, #7a60ff, #cd9ffa);
+}
+
+.download-btns{
+    display: flex;
+    margin-left: 40%;
+    animation-name:downloadButtons1;
+    animation-duration: 1s;
+}
+
+.download-btns button{
+    display: flex;
+    align-items: center;
+    width: 12vw;
+    height: 4vw;
+    justify-content: space-evenly;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.872);
+    border: none;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+.download-btns i{
+    font-size: 1.9vw;
+    color: white;
+}
+
+
+
+.rights{
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.rights a{
+    color: var(--lightPurple);
+}
